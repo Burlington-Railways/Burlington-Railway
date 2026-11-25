@@ -75,6 +75,38 @@ const SITE = {
     }
   ],
 
+  server: { address: "leightoncounty.play.hosting" },
+
+  discord: { invite: "https://discord.gg/bJqcuM84jG", code: "bJqcuM84jG" },
+
+  // News and history, newest first. Add a { date, title, text } line for each update.
+  news: [
+    { date: "Now", title: "We're hiring", text: "Burlington Railways is expanding and needs more people. See the Jobs section to apply." },
+    { date: "2026", title: "Burlington Railways is founded", text: "The railway links the districts of Burlington, Cyanville, Malibou and Centralia." }
+  ],
+
+  // Screenshots. Upload your pictures into a folder called "photos" in the repo,
+  // then add one line per picture, for example:
+  //   { src: "photos/burlington-union.png", caption: "Burlington Union at sunset" },
+  gallery: [
+  ],
+
+  // Staff list. Add one line per person, for example:
+  //   { name: "YourName", role: "Owner", note: "Built the Centralia Line" },
+  team: [
+  ],
+
+  // Sample rules: edit these to match your server.
+  rules: [
+    "Be respectful to all riders and staff.",
+    "No griefing, stealing or damaging railway property such as tracks, stations and trains.",
+    "Keep tracks and platforms clear of items, mobs and blocks.",
+    "Stay in the train until you reach your station.",
+    "Follow the instructions of railway staff.",
+    "No cheating or hacked clients.",
+    "Keep chat friendly and don't spam."
+  ],
+
   jobs: {
     intro: "Want to help run Burlington Railways? We're always looking for people to join the team. Fill out the application and we'll get back to you on Discord.",
     applyUrl: "https://forms.gle/sGhKUa3823ztBfed7",

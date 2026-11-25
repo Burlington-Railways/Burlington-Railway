@@ -16,11 +16,16 @@
     </a>
     <nav>
       <a href="#about">About</a>
+      <a href="#community">Join</a>
       <a href="#map">Map</a>
       <a href="#lines">Lines</a>
       <a href="#stations">Stations</a>
       <a href="#fleet">Fleet</a>
-      <a href="#ride">How to ride</a>
+      <a href="#news">News</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#team">Team</a>
+      <a href="#rules">Rules</a>
+      <a href="#ride">Ride</a>
       <a href="#jobs">Jobs</a>
     </nav>
   </header>
@@ -45,7 +50,27 @@
       </div>
     </section>
 
-    <section id="map" class="section alt">
+    <section id="community" class="section alt">
+      <h2>Join us</h2>
+      <div class="join-grid">
+        <article class="card join-card">
+          <h3>Minecraft server</h3>
+          <p class="meta" id="server-version"></p>
+          <div class="addr-row">
+            <code id="server-address"></code>
+            <button class="btn btn-small" id="server-copy" type="button">Copy</button>
+          </div>
+          <p class="status unknown" id="server-status"><span class="pulse"></span><span id="server-status-text">Checking server...</span></p>
+        </article>
+        <article class="card join-card">
+          <h3>Discord community</h3>
+          <p class="meta" id="discord-counts">Get server details, news and help from staff.</p>
+          <a class="btn" id="discord-join" href="#community" target="_blank" rel="noopener">Join the Discord</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="map" class="section">
       <h2>Network map</h2>
       <div class="map-wrap">
         <svg viewBox="160 470 980 540" role="img" aria-label="Network map of Burlington Railways" class="netmap">
@@ -96,12 +121,12 @@
       </div>
     </section>
 
-    <section id="lines" class="section">
+    <section id="lines" class="section alt">
       <h2>Lines</h2>
       <div class="cards" id="lines-list"></div>
     </section>
 
-    <section id="stations" class="section alt">
+    <section id="stations" class="section">
       <h2>Stations</h2>
       <input id="station-filter" class="filter" type="search" placeholder="Search stations or lines..." aria-label="Search stations">
       <div class="table-wrap">
@@ -112,19 +137,46 @@
       </div>
     </section>
 
-    <section id="fleet" class="section">
+    <section id="fleet" class="section alt">
       <h2>Fleet</h2>
       <div class="cards" id="fleet-list"></div>
     </section>
 
-    <section id="ride" class="section alt">
+    <section id="news" class="section">
+      <h2>News &amp; history</h2>
+      <ol class="timeline" id="news-list"></ol>
+    </section>
+
+    <section id="gallery" class="section alt">
+      <h2>Gallery</h2>
+      <div class="gallery" id="gallery-list"></div>
+    </section>
+
+    <section id="team" class="section">
+      <h2>Our team</h2>
+      <div class="cards" id="team-list"></div>
+    </section>
+
+    <section id="rules" class="section alt">
+      <h2>Rules</h2>
+      <ol class="steps" id="rules-list"></ol>
+    </section>
+
+
+    <section id="ride" class="section">
       <h2>How to ride</h2>
       <ol class="steps" id="ride-steps"></ol>
     </section>
 
-    <section id="jobs" class="section">
+    <section id="jobs" class="section alt">
       <h2>Jobs at Burlington Railways</h2>
       <p id="jobs-intro"></p>
+      <div class="ad-wrap">
+        <video class="ad-video" controls preload="metadata" playsinline>
+          <source src="br-ad.mp4" type="video/mp4">
+          Your browser can't play this video.
+        </video>
+      </div>
       <div class="cards" id="jobs-list"></div>
       <div class="jobs-cta">
         <a class="btn" id="jobs-apply" href="#jobs" target="_blank" rel="noopener">Apply now</a>
