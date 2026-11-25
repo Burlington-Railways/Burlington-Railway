@@ -7,11 +7,10 @@
 const SITE = {
   about:
     "Burlington Railways is a fictional railway built in Minecraft, linking the districts of Burlington, Cyanville, Malibou and Centralia. " +
-    "Placeholder: replace this with the story of your railway, such as when it was founded and what makes it special.",
+   ,
 
   facts: {
-    "Founded": "2024 (placeholder)",
-    "Server / World": "Your server or world name",
+    "Founded": "2026",
     "Minecraft version": "1.20.1",
     "Lines": "3",
     "Stations": "10",
@@ -20,7 +19,7 @@ const SITE = {
 
   lines: [
     {
-      name: "Centralia Line",
+      name: "Centralia",
       color: "#45a039",
       route: "Burlington Union to Centralia",
       length: "",
@@ -29,7 +28,7 @@ const SITE = {
       stops: ["Burlington Union", "Grant Ave", "Centralia Street", "Metrodome Plaza", "Malibou", "Centralia"]
     },
     {
-      name: "Cyanville Line",
+      name: "Cyanville",
       color: "#b32b26",
       route: "Station 10 to Cyanville",
       length: "",
@@ -64,25 +63,25 @@ const SITE = {
   // Placeholder fleet: replace with your real trains.
   fleet: [
     {
-      name: "Example Train A",
+      name: "Class 423",
       role: "Passenger",
-      description: "Placeholder: describe your train here.",
+      description: "Comfort and space focused.",
       tags: ["Centralia Line"]
     },
     {
-      name: "Example Train B",
+      name: "Stadler FLIRT",
       role: "Passenger",
-      description: "Placeholder: describe your train here.",
-      tags: ["Cyanville Line"]
+      description: "Comfort focused.",
+      tags: ["Cyanville Line, Malibou Line"]
     }
   ],
 
   ride: [
     "Join our Discord at <a href=\"https://discord.gg/bJqcuM84jG\" target=\"_blank\" rel=\"noopener\">discord.gg/bJqcuM84jG</a> to get the server details and connect with other riders.",
-    "Join the server at <code>your.server.address</code> (placeholder) and head to any station.",
+    "Join the server at leightoncounty.play.hosting and head to any station.",
     "Check the line colors on the map: green for Centralia, red for Cyanville, teal for Malibou.",
     "Board at your platform. Metrodome Plaza is the main interchange, and Cyanville riders change there.",
-    "Stay in the cart until you reach your station.",
+    "Stay in the train until you reach your station.",
     "Keep the tracks clear of items and mobs, and please don't grief the railway."
   ]
 };
