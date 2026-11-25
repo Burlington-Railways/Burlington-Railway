@@ -59,7 +59,7 @@ const SITE = {
     { name: "Cyanville Street", lines: ["Cyanville"], district: "Cyanville", notes: "" }
   ],
 
-  // Placeholder fleet: replace with your real trains.
+  // Fleet
   fleet: [
     {
       name: "Class 423",
@@ -74,6 +74,16 @@ const SITE = {
       tags: ["Cyanville", "Malibou"]
     }
   ],
+
+  jobs: {
+    intro: "Want to help run Burlington Railways? We're always looking for people to join the team. Fill out the application and we'll get back to you on Discord.",
+    applyUrl: "https://forms.gle/sGhKUa3823ztBfed7",
+    positions: [
+      { title: "Train Operator", description: "Drive passenger trains along the lines and keep services on time.", tags: ["Operations"] },
+      { title: "Station Staff", description: "Look after a station, help riders and keep platforms tidy.", tags: ["Stations"] },
+      { title: "Builder", description: "Help build and extend track, stations and scenery.", tags: ["Construction"] }
+    ]
+  },
 
   ride: [
     "Join our Discord at <a href=\"https://discord.gg/bJqcuM84jG\" target=\"_blank\" rel=\"noopener\">discord.gg/bJqcuM84jG</a> to get the server details and connect with other riders.",

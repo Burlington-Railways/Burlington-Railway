@@ -32,6 +32,15 @@
   // Steps may contain simple <code> tags, so they are written as trusted HTML.
   $("ride-steps").innerHTML = SITE.ride.map((s) => `<li>${s}</li>`).join("");
 
+  $("jobs-intro").textContent = SITE.jobs.intro;
+  $("jobs-apply").href = SITE.jobs.applyUrl;
+  $("jobs-list").innerHTML = SITE.jobs.positions.map((j) => `
+    <article class="card">
+      <h3>${esc(j.title)}</h3>
+      <p>${esc(j.description)}</p>
+      <div class="chips">${j.tags.map((t) => `<span class="chip">${esc(t)}</span>`).join("")}</div>
+    </article>`).join("");
+
   const body = $("stations-body");
   function renderStations(filter) {
     const q = (filter || "").toLowerCase();
