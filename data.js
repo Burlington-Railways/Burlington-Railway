@@ -1,13 +1,12 @@
 // ============================================================
 //  EDIT THIS FILE to update the whole website.
 //  Lines and stations come from your network map.
-//  Anything marked "placeholder" is made up: replace it.
+//  Edit the text below to update the website.
 // ============================================================
 
 const SITE = {
   about:
-    "Burlington Railways is a fictional railway built in Minecraft, linking the districts of Burlington, Cyanville, Malibou and Centralia. " +
-   ,
+    "Burlington Railways is a fictional railway built in Minecraft, linking the districts of Burlington, Cyanville, Malibou and Centralia.",
 
   facts: {
     "Founded": "2026",
@@ -48,16 +47,16 @@ const SITE = {
   ],
 
   stations: [
-    { name: "Station 10", lines: ["Cyanville Line", "Malibou"], district: "Burlington", notes: "Northern terminus for the red and teal lines" },
-    { name: "Burlington Union", lines: ["Centralia Line"], district: "Burlington", notes: "Northern terminus of the Centralia Line" },
-    { name: "Grant Ave", lines: ["Centralia Line", "Cyanville Line", "Malibou"], district: "Burlington", notes: "" },
-    { name: "Centralia Street", lines: ["Centralia Line", "Cyanville Line", "Malibou"], district: "Burlington", notes: "" },
-    { name: "Metrodome Plaza", lines: ["Centralia Line", "Cyanville Line", "Malibou"], district: "Burlington", notes: "Where the Cyanville Line branches west" },
-    { name: "Malibou", lines: ["Centralia Line", "Malibou"], district: "Malibou", notes: "Terminus of the Malibou line" },
-    { name: "Centralia", lines: ["Centralia Line"], district: "Centralia", notes: "Southern terminus" },
-    { name: "Lincoln Street", lines: ["Cyanville Line"], district: "Cyanville", notes: "" },
-    { name: "Llama Ave", lines: ["Cyanville Line"], district: "Cyanville", notes: "" },
-    { name: "Cyanville Street", lines: ["Cyanville Line"], district: "Cyanville", notes: "" }
+    { name: "Station 10", lines: ["Cyanville", "Malibou"], district: "Burlington", notes: "Northern terminus for the red and teal lines" },
+    { name: "Burlington Union", lines: ["Centralia"], district: "Burlington", notes: "Northern terminus of the Centralia Line" },
+    { name: "Grant Ave", lines: ["Centralia", "Cyanville", "Malibou"], district: "Burlington", notes: "" },
+    { name: "Centralia Street", lines: ["Centralia", "Cyanville", "Malibou"], district: "Burlington", notes: "" },
+    { name: "Metrodome Plaza", lines: ["Centralia", "Cyanville", "Malibou"], district: "Burlington", notes: "Where the Cyanville Line branches west" },
+    { name: "Malibou", lines: ["Centralia", "Malibou"], district: "Malibou", notes: "Terminus of the Malibou line" },
+    { name: "Centralia", lines: ["Centralia"], district: "Centralia", notes: "Southern terminus" },
+    { name: "Lincoln Street", lines: ["Cyanville"], district: "Cyanville", notes: "" },
+    { name: "Llama Ave", lines: ["Cyanville"], district: "Cyanville", notes: "" },
+    { name: "Cyanville Street", lines: ["Cyanville"], district: "Cyanville", notes: "" }
   ],
 
   // Placeholder fleet: replace with your real trains.
@@ -66,13 +65,13 @@ const SITE = {
       name: "Class 423",
       role: "Passenger",
       description: "Comfort and space focused.",
-      tags: ["Centralia Line"]
+      tags: ["Centralia"]
     },
     {
       name: "Stadler FLIRT",
       role: "Passenger",
       description: "Comfort focused.",
-      tags: ["Cyanville Line, Malibou Line"]
+      tags: ["Cyanville", "Malibou"]
     }
   ],
 
