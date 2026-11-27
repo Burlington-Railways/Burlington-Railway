@@ -75,12 +75,21 @@ const SITE = {
     }
   ],
 
-  server: { address: "leightoncounty.play.hosting" },
+  // Shown in the yellow bar at the top of the page. Set show to false to hide it.
+  notice: { show: true, text: "We've moved to a new server." },
+
+  hero: {
+    headline: "Ride Burlington Railways.",
+    sub: "Three lines, ten stations and four districts of a fictional Minecraft railway, now running on a new server."
+  },
+
+  server: { address: "pacificanaca.play.hosting" },
 
   discord: { invite: "https://discord.gg/bJqcuM84jG", code: "bJqcuM84jG" },
 
   // News and history, newest first. Add a { date, title, text } line for each update.
   news: [
+    { date: "November 2026", title: "We've moved to a new server", text: "Burlington Railways now runs on pacificanaca.play.hosting, still on Minecraft 1.20.1. Our Discord invite hasn't changed.", highlight: true },
     { date: "Now", title: "We're hiring", text: "Burlington Railways is expanding and needs more people. See the Jobs section to apply." },
     { date: "2026", title: "Burlington Railways is founded", text: "The railway links the districts of Burlington, Cyanville, Malibou and Centralia." }
   ],
@@ -119,7 +128,7 @@ const SITE = {
 
   ride: [
     "Join our Discord at <a href=\"https://discord.gg/bJqcuM84jG\" target=\"_blank\" rel=\"noopener\">discord.gg/bJqcuM84jG</a> to get the server details and connect with other riders.",
-    "Join the server at leightoncounty.play.hosting and head to any station.",
+    "Join the server at pacificanaca.play.hosting (Minecraft 1.20.1) and head to any station.",
     "Check the line colors on the map: green for Centralia, red for Cyanville, teal for Malibou.",
     "Board at your platform. Metrodome Plaza is the main interchange, and Cyanville riders change there.",
     "Stay in the train until you reach your station.",

@@ -1,94 +1,80 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Burlington Railways | Minecraft Railway Info</title>
-  <meta name="description" content="Lines, stations, fleet and how to ride Burlington Railways, a fictional Minecraft railway.">
-  <meta name="theme-color" content="#45a039">
-  <link rel="icon" href="data:image/png;base64,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">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Burlington Railways</title>
+<meta name="description" content="Burlington Railways is a fictional Minecraft railway. Lines, stations, fleet, jobs and how to ride.">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#about">Skip to content</a>
 
-  <nav class="rail" aria-label="Sections">
-    <a class="brand" href="#top"><span class="brand-logo" role="img" aria-label="Burlington Railways"></span></a>
-    <ol>
-      <li style="--i:0"><a href="#about">About</a></li>
-      <li style="--i:1"><a href="#community">Join</a></li>
-      <li style="--i:2"><a href="#map">Map</a></li>
-      <li style="--i:3"><a href="#lines">Lines</a></li>
-      <li style="--i:4"><a href="#stations">Stations</a></li>
-      <li style="--i:5"><a href="#fleet">Fleet</a></li>
-      <li style="--i:6"><a href="#news">News</a></li>
-      <li style="--i:7"><a href="#gallery">Gallery</a></li>
-      <li style="--i:8"><a href="#team">Team</a></li>
-      <li style="--i:9"><a href="#rules">Rules</a></li>
-      <li style="--i:10"><a href="#ride">How to ride</a></li>
-      <li style="--i:11"><a href="#jobs">Jobs</a></li>
-    </ol>
+<div class="notice" id="notice" hidden>
+  <p><strong id="notice-text"></strong> <span class="nt-addr">New address: <code id="notice-addr"></code></span></p>
+  <button type="button" class="nt-copy" data-copy>Copy address</button>
+</div>
+
+<header class="head">
+  <a class="brand" href="#top" aria-label="Burlington Railways, top of page"><span class="brand-logo" role="img" aria-label="Burlington Railways"></span></a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#map">Map</a>
+    <a href="#lines">Lines</a>
+    <a href="#stations">Stations</a>
+    <a href="#fleet">Fleet</a>
+    <a href="#news">News</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#team">Team</a>
+    <a href="#rules">Rules</a>
+    <a href="#ride">How to ride</a>
+    <a href="#jobs">Jobs</a>
   </nav>
+</header>
 
-  <div class="page">
-    <main id="main">
-      <section id="top" class="hero">
-        <div class="wrap hero-grid">
-          <div class="hero-copy">
-            <h1>Catch a train in Minecraft.</h1>
-            <p class="hero-sub" id="hero-sub"></p>
-            <div class="hero-cta">
-              <a class="btn" href="#community">Join the server</a>
-              <a class="btn btn-line" href="#jobs">Apply for a job</a>
-            </div>
-          </div>
-          <div class="board" role="group" aria-label="Network status">
-            <div class="board-head">
-              <span>Network status</span>
-              <span class="status unknown" id="board-status"><i class="dot"></i><span id="board-status-text">Checking server...</span></span>
-            </div>
-            <ul class="board-rows" id="board-rows"></ul>
-          </div>
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 id="hero-title">Ride Burlington Railways.</h1>
+        <p class="lede" id="hero-sub"></p>
+        <div class="cta">
+          <a class="btn" id="discord-join" href="#" target="_blank" rel="noopener">Join the Discord</a>
+          <a class="btn btn-line" href="#lines">See the lines</a>
         </div>
-      </section>
+        <p class="small" id="discord-counts"></p>
+      </div>
 
-      <section id="about" class="sec">
-        <div class="wrap">
-          <h2>About the railway</h2>
-          <div class="about">
-            <p class="lead" id="about-text"></p>
-            <dl class="facts" id="facts"></dl>
-          </div>
+      <aside class="board" aria-label="Server details">
+        <div class="board-top"><span>Now boarding</span><span class="status unknown" id="board-status"><i></i><span id="board-status-text">Checking server</span></span></div>
+        <p class="board-label">Server address</p>
+        <p class="board-addr" id="board-address"></p>
+        <div class="board-foot">
+          <span id="board-version"></span>
+          <button type="button" class="btn btn-y" data-copy>Copy address</button>
         </div>
-      </section>
+      </aside>
+    </div>
+  </section>
 
-      <section id="community" class="sec">
-        <div class="wrap">
-          <h2>Join the server</h2>
-          <div class="join">
-            <div>
-              <h3>Minecraft server</h3>
-              <p class="muted" id="server-version"></p>
-              <div class="nameplate">
-                <span class="addr" id="server-address"></span>
-                <button class="btn btn-light btn-small" id="server-copy" type="button">Copy</button>
-              </div>
-              <p class="status unknown" id="server-status" aria-live="polite"><i class="dot"></i><span id="server-status-text">Checking server...</span></p>
-            </div>
-            <div>
-              <h3>Discord</h3>
-              <p class="muted" id="discord-counts">Get server details, news and help from staff.</p>
-              <a class="btn" id="discord-join" href="#community" target="_blank" rel="noopener">Join the Discord</a>
-            </div>
-          </div>
-        </div>
-      </section>
+  <section class="band" id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <div class="about-grid">
+        <p class="prose" id="about-text"></p>
+        <dl class="facts" id="facts"></dl>
+      </div>
+    </div>
+  </section>
 
-      <section id="map" class="sec">
-        <div class="wrap">
-          <h2>Network map</h2>
-          <div class="mapbox">
-            <svg viewBox="160 470 980 540" role="img" aria-label="Network map of Burlington Railways" class="netmap">
+  <section class="band alt" id="map">
+    <div class="wrap">
+      <h2>Network map</h2>
+      <div class="map-frame"><svg viewBox="160 470 980 540" role="img" aria-label="Network map of Burlington Railways" class="netmap">
           <style>
             .d { fill:#bcbcb8; stroke:#888; stroke-width:3; }
             .dl { font-family: Georgia, serif; font-weight:700; letter-spacing:3px; fill:#666; font-size:21px; }
@@ -131,99 +117,99 @@
           <text class="lb" x="187" y="773">Cyanville Street</text>
           <text class="lb" x="165" y="805">Llama Ave</text>
           <text class="lb" x="288" y="837">Lincoln Street</text>
-        </svg>
-            <ul class="legend" id="legend"></ul>
-          </div>
-        </div>
-      </section>
+        </svg></div>
+      <ul class="legend" id="legend"></ul>
+    </div>
+  </section>
 
-      <section id="lines" class="sec">
-        <div class="wrap">
-          <h2>Lines</h2>
-          <div class="lines" id="lines-list"></div>
-        </div>
-      </section>
+  <section class="band" id="lines">
+    <div class="wrap">
+      <h2>Lines</h2>
+      <div id="lines-list"></div>
+    </div>
+  </section>
 
-      <section id="stations" class="sec">
-        <div class="wrap">
-          <h2>Stations</h2>
-          <input id="station-filter" class="finder" type="search" placeholder="Search by station, line or district" aria-label="Search stations">
-          <div class="tablebox">
-            <table>
-              <thead><tr><th>Station</th><th>Lines</th><th>District</th><th>Notes</th></tr></thead>
-              <tbody id="stations-body"></tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section id="fleet" class="sec">
-        <div class="wrap">
-          <h2>Fleet</h2>
-          <div class="fleet" id="fleet-list"></div>
-        </div>
-      </section>
-
-      <section id="news" class="sec">
-        <div class="wrap">
-          <h2>News and history</h2>
-          <ol class="news" id="news-list"></ol>
-        </div>
-      </section>
-
-      <section id="gallery" class="sec">
-        <div class="wrap">
-          <h2>Gallery</h2>
-          <div class="gallery" id="gallery-list"></div>
-        </div>
-      </section>
-
-      <section id="team" class="sec">
-        <div class="wrap">
-          <h2>Team</h2>
-          <div class="team" id="team-list"></div>
-        </div>
-      </section>
-
-      <section id="rules" class="sec">
-        <div class="wrap">
-          <h2>Rules</h2>
-          <ul class="rules" id="rules-list"></ul>
-        </div>
-      </section>
-
-      <section id="ride" class="sec">
-        <div class="wrap">
-          <h2>How to ride</h2>
-          <ol class="ride" id="ride-steps"></ol>
-        </div>
-      </section>
-
-      <section id="jobs" class="sec band">
-        <div class="wrap jobs">
-          <div>
-            <h2>Work for the railway</h2>
-            <p class="lead" id="jobs-intro"></p>
-            <ul class="roles" id="jobs-list"></ul>
-            <a class="btn btn-light btn-big" id="jobs-apply" href="#jobs" target="_blank" rel="noopener">Apply now</a>
-          </div>
-          <video class="ad" controls preload="none" playsinline poster="br-ad-poster.jpg">
-            <source src="br-ad.mp4" type="video/mp4">
-            Your browser can't play this video.
-          </video>
-        </div>
-      </section>
-    </main>
-
-    <footer class="foot">
-      <div class="wrap">
-        <div class="foot-logo" role="img" aria-label="Burlington Railways"></div>
-        <p>Burlington Railways is a fictional railway in Minecraft. It is not affiliated with Mojang, Microsoft or any real railroad.</p>
+  <section class="band alt" id="stations">
+    <div class="wrap">
+      <h2>Stations</h2>
+      <label class="filter"><span>Search stations</span><input id="station-filter" type="search" placeholder="Name, line or district" autocomplete="off"></label>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Station</th><th scope="col">Lines</th><th scope="col">District</th><th scope="col">Notes</th></tr></thead>
+          <tbody id="stations-body"></tbody>
+        </table>
       </div>
-    </footer>
-  </div>
+    </div>
+  </section>
 
-  <script src="data.js"></script>
-  <script src="main.js"></script>
+  <section class="band" id="fleet">
+    <div class="wrap">
+      <h2>Fleet</h2>
+      <div class="rows" id="fleet-list"></div>
+    </div>
+  </section>
+
+  <section class="band alt" id="news">
+    <div class="wrap">
+      <h2>News</h2>
+      <ol class="news" id="news-list"></ol>
+    </div>
+  </section>
+
+  <section class="band" id="gallery">
+    <div class="wrap">
+      <h2>Gallery</h2>
+      <div class="gallery" id="gallery-list"></div>
+    </div>
+  </section>
+
+  <section class="band alt" id="team">
+    <div class="wrap">
+      <h2>Team</h2>
+      <div class="rows" id="team-list"></div>
+    </div>
+  </section>
+
+  <section class="band" id="rules">
+    <div class="wrap">
+      <h2>Rules</h2>
+      <ul class="rules" id="rules-list"></ul>
+    </div>
+  </section>
+
+  <section class="band alt" id="ride">
+    <div class="wrap">
+      <h2>How to ride</h2>
+      <ol class="steps" id="ride-steps"></ol>
+    </div>
+  </section>
+
+  <section class="band dark" id="jobs">
+    <div class="wrap">
+      <h2>Jobs</h2>
+      <div class="jobs-grid">
+        <div>
+          <p class="lede" id="jobs-intro"></p>
+          <ul class="jobs" id="jobs-list"></ul>
+          <a class="btn btn-y" id="jobs-apply" href="#" target="_blank" rel="noopener">Apply now</a>
+        </div>
+        <video controls preload="none" poster="br-ad-poster.jpg" playsinline>
+          <source src="br-ad.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="brand-logo" role="img" aria-label="Burlington Railways"></span>
+    <p>Burlington Railways is a fictional railway in Minecraft. It is not affiliated with Mojang, Microsoft or any real railroad.</p>
+  </div>
+  <div class="stripe"><i></i><i></i><i></i></div>
+</footer>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
